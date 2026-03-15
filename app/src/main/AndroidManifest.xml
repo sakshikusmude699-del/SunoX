@@ -7,7 +7,7 @@
 
     <application
         android:allowBackup="true"
-        android:label="Sound Amplifier"
+        android:label="SmartHear+"
         android:theme="@style/Theme.SoundAmplifier"
         android:supportsRtl="true">
 

@@ -21,7 +21,7 @@ fun HomeScreen(
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = "Sound Amplifier",
+            text = "SmartHear+",
             style = MaterialTheme.typography.headlineLarge,
             textAlign = TextAlign.Center
         )

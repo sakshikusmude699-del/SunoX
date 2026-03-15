@@ -35,8 +35,8 @@
 23-->[androidx.core:core:1.12.0] C:\Users\coderant\.gradle\caches\transforms-3\0c819a28345c67483feadeb4c3588676\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
-26        android:label="Sound Amplifier"
-26-->D:\Engineering@VIIT\FINAL YEAR PROJECT\SmartHearPlusPlus\SoundAmplifier\app\src\main\AndroidManifest.xml:10:9-40
+26        android:label="SmartHear+"
+26-->D:\Engineering@VIIT\FINAL YEAR PROJECT\SmartHearPlusPlus\SoundAmplifier\app\src\main\AndroidManifest.xml:10:9-35
 27        android:supportsRtl="true"
 27-->D:\Engineering@VIIT\FINAL YEAR PROJECT\SmartHearPlusPlus\SoundAmplifier\app\src\main\AndroidManifest.xml:12:9-35
 28        android:testOnly="true"

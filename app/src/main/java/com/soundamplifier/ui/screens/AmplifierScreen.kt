@@ -24,7 +24,7 @@ fun AmplifierScreen(
             .padding(24.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Sound Amplifier", style = MaterialTheme.typography.headlineMedium)
+        Text("SmartHear+", style = MaterialTheme.typography.headlineMedium)
 
         Spacer(modifier = Modifier.height(24.dp))
 
