@@ -1,0 +1,390 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.soundamplifier"
+4    android:versionCode="5"
+5    android:versionName="1.0.4" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- Audio permissions -->
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:5:5-71
+12-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:5:22-68
+13    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+13-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:6:5-80
+13-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:6:22-77
+14    <!-- Needed to enumerate Bluetooth audio devices on Android 12+ -->
+15    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+15-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:8:5-76
+15-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:8:22-73
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:25:5-67
+16-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:25:22-64
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:26:5-79
+17-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:26:22-76
+18    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+18-->[com.google.android.recaptcha:recaptcha:18.5.1] /home/onyx/.gradle/caches/transforms-3/83238b38732d490b1a1a9650e12ac593/transformed/jetified-recaptcha-18.5.1/AndroidManifest.xml:9:5-98
+18-->[com.google.android.recaptcha:recaptcha:18.5.1] /home/onyx/.gradle/caches/transforms-3/83238b38732d490b1a1a9650e12ac593/transformed/jetified-recaptcha-18.5.1/AndroidManifest.xml:9:22-95
+19
+20    <permission
+20-->[androidx.core:core:1.13.0] /home/onyx/.gradle/caches/transforms-3/0748cc97e426a847ad5de113a5a0c9bc/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+21        android:name="com.soundamplifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+21-->[androidx.core:core:1.13.0] /home/onyx/.gradle/caches/transforms-3/0748cc97e426a847ad5de113a5a0c9bc/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+22        android:protectionLevel="signature" />
+22-->[androidx.core:core:1.13.0] /home/onyx/.gradle/caches/transforms-3/0748cc97e426a847ad5de113a5a0c9bc/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+23
+24    <uses-permission android:name="com.soundamplifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+24-->[androidx.core:core:1.13.0] /home/onyx/.gradle/caches/transforms-3/0748cc97e426a847ad5de113a5a0c9bc/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.13.0] /home/onyx/.gradle/caches/transforms-3/0748cc97e426a847ad5de113a5a0c9bc/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+25
+26    <application
+26-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:10:5-41:19
+27        android:name="com.soundamplifier.SunoXApp"
+27-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:11:9-33
+28        android:allowBackup="true"
+28-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:12:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.13.0] /home/onyx/.gradle/caches/transforms-3/0748cc97e426a847ad5de113a5a0c9bc/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+30        android:extractNativeLibs="false"
+31        android:icon="@mipmap/ic_launcher"
+31-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:14:9-43
+32        android:label="@string/app_name"
+32-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:13:9-41
+33        android:localeConfig="@xml/locales_config"
+33-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:18:9-51
+34        android:roundIcon="@mipmap/ic_launcher_round"
+34-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:15:9-54
+35        android:supportsRtl="true"
+35-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:17:9-35
+36        android:theme="@style/Theme.SoundAmplifier" >
+36-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:16:9-52
+37        <activity
+37-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:20:9-29:20
+38            android:name="com.soundamplifier.ui.MainActivity"
+38-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:21:13-44
+39            android:enableOnBackInvokedCallback="false"
+39-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:23:13-56
+40            android:exported="true"
+40-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:22:13-36
+41            android:windowSoftInputMode="adjustResize" >
+41-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:24:13-55
+42            <intent-filter>
+42-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:25:13-28:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:26:17-69
+43-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:26:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:27:17-77
+45-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:27:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <!-- Lets AppCompatDelegate.persistLocales() / per-app language work on API &lt; 33 -->
+50        <service
+50-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:32:9-39:19
+51            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+51-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:33:13-82
+52            android:enabled="false"
+52-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:34:13-36
+53            android:exported="false" >
+53-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:35:13-37
+54            <meta-data
+54-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:36:13-38:40
+55                android:name="autoStoreLocales"
+55-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:37:17-48
+56                android:value="true" />
+56-->/home/onyx/Documents/SoundAmplifier/app/src/main/AndroidManifest.xml:38:17-37
+57        </service>
+58
+59        <provider
+59-->[androidx.emoji2:emoji2:1.3.0] /home/onyx/.gradle/caches/transforms-3/63266e0bc77243507fad7f30f977c8f7/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.3.0] /home/onyx/.gradle/caches/transforms-3/63266e0bc77243507fad7f30f977c8f7/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+61            android:authorities="com.soundamplifier.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.3.0] /home/onyx/.gradle/caches/transforms-3/63266e0bc77243507fad7f30f977c8f7/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.3.0] /home/onyx/.gradle/caches/transforms-3/63266e0bc77243507fad7f30f977c8f7/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.emoji2:emoji2:1.3.0] /home/onyx/.gradle/caches/transforms-3/63266e0bc77243507fad7f30f977c8f7/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.3.0] /home/onyx/.gradle/caches/transforms-3/63266e0bc77243507fad7f30f977c8f7/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+65                android:value="androidx.startup" />
+65-->[androidx.emoji2:emoji2:1.3.0] /home/onyx/.gradle/caches/transforms-3/63266e0bc77243507fad7f30f977c8f7/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/onyx/.gradle/caches/transforms-3/a8c825ef09ed84ef3c83b1d5c0693cc4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/onyx/.gradle/caches/transforms-3/a8c825ef09ed84ef3c83b1d5c0693cc4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/onyx/.gradle/caches/transforms-3/a8c825ef09ed84ef3c83b1d5c0693cc4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+69            <meta-data
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+71                android:value="androidx.startup" />
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+72        </provider>
+73
+74        <activity
+74-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:29:9-46:20
+75            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+75-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:30:13-80
+76            android:excludeFromRecents="true"
+76-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:31:13-46
+77            android:exported="true"
+77-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:32:13-36
+78            android:launchMode="singleTask"
+78-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:33:13-44
+79            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+79-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:34:13-72
+80            <intent-filter>
+80-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:35:13-45:29
+81                <action android:name="android.intent.action.VIEW" />
+81-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:36:17-69
+81-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:36:25-66
+82
+83                <category android:name="android.intent.category.DEFAULT" />
+83-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:38:17-76
+83-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:38:27-73
+84                <category android:name="android.intent.category.BROWSABLE" />
+84-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:39:17-78
+84-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:39:27-75
+85
+86                <data
+86-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:41:17-44:51
+87                    android:host="firebase.auth"
+87-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:42:21-49
+88                    android:path="/"
+88-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:43:21-37
+89                    android:scheme="genericidp" />
+89-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:44:21-48
+90            </intent-filter>
+91        </activity>
+92        <activity
+92-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:47:9-64:20
+93            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+93-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:48:13-79
+94            android:excludeFromRecents="true"
+94-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:49:13-46
+95            android:exported="true"
+95-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:50:13-36
+96            android:launchMode="singleTask"
+96-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:51:13-44
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+97-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:52:13-72
+98            <intent-filter>
+98-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:53:13-63:29
+99                <action android:name="android.intent.action.VIEW" />
+99-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:36:17-69
+99-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:36:25-66
+100
+101                <category android:name="android.intent.category.DEFAULT" />
+101-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:38:17-76
+101-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:38:27-73
+102                <category android:name="android.intent.category.BROWSABLE" />
+102-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:39:17-78
+102-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:39:27-75
+103
+104                <data
+104-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:41:17-44:51
+105                    android:host="firebase.auth"
+105-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:42:21-49
+106                    android:path="/"
+106-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:43:21-37
+107                    android:scheme="recaptcha" />
+107-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:44:21-48
+108            </intent-filter>
+109        </activity>
+110
+111        <service
+111-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:66:9-72:19
+112            android:name="com.google.firebase.components.ComponentDiscoveryService"
+112-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:67:13-84
+113            android:directBootAware="true"
+113-->[com.google.firebase:firebase-common:21.0.0] /home/onyx/.gradle/caches/transforms-3/c0c2e08b400d9e62243738a221c7e683/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+114            android:exported="false" >
+114-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:68:13-37
+115            <meta-data
+115-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:69:13-71:85
+116                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+116-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:70:17-109
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-auth:23.1.0] /home/onyx/.gradle/caches/transforms-3/13db9a958a0ab310d194d60a7b3d149d/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:71:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-firestore-ktx:25.1.1] /home/onyx/.gradle/caches/transforms-3/c57338f1ced53c421718fbdd3e4c7c32/transformed/jetified-firebase-firestore-ktx-25.1.1/AndroidManifest.xml:12:13-14:85
+119                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
+119-->[com.google.firebase:firebase-firestore-ktx:25.1.1] /home/onyx/.gradle/caches/transforms-3/c57338f1ced53c421718fbdd3e4c7c32/transformed/jetified-firebase-firestore-ktx-25.1.1/AndroidManifest.xml:13:17-129
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-firestore-ktx:25.1.1] /home/onyx/.gradle/caches/transforms-3/c57338f1ced53c421718fbdd3e4c7c32/transformed/jetified-firebase-firestore-ktx-25.1.1/AndroidManifest.xml:14:17-82
+121            <meta-data
+121-->[com.google.firebase:firebase-firestore:25.1.1] /home/onyx/.gradle/caches/transforms-3/c1d4639fe328ca966d21063579b56bee/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:17:13-19:85
+122                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+122-->[com.google.firebase:firebase-firestore:25.1.1] /home/onyx/.gradle/caches/transforms-3/c1d4639fe328ca966d21063579b56bee/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:18:17-122
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.firebase:firebase-firestore:25.1.1] /home/onyx/.gradle/caches/transforms-3/c1d4639fe328ca966d21063579b56bee/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:19:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-firestore:25.1.1] /home/onyx/.gradle/caches/transforms-3/c1d4639fe328ca966d21063579b56bee/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:20:13-22:85
+125                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+125-->[com.google.firebase:firebase-firestore:25.1.1] /home/onyx/.gradle/caches/transforms-3/c1d4639fe328ca966d21063579b56bee/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:21:17-111
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-firestore:25.1.1] /home/onyx/.gradle/caches/transforms-3/c1d4639fe328ca966d21063579b56bee/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:22:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/onyx/.gradle/caches/transforms-3/aab3df758875053d9fb8a5bfe0a6a6a6/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+128                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+128-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/onyx/.gradle/caches/transforms-3/aab3df758875053d9fb8a5bfe0a6a6a6/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/onyx/.gradle/caches/transforms-3/aab3df758875053d9fb8a5bfe0a6a6a6/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+130            <meta-data
+130-->[com.google.firebase:firebase-common:21.0.0] /home/onyx/.gradle/caches/transforms-3/c0c2e08b400d9e62243738a221c7e683/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+131                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+131-->[com.google.firebase:firebase-common:21.0.0] /home/onyx/.gradle/caches/transforms-3/c0c2e08b400d9e62243738a221c7e683/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-common:21.0.0] /home/onyx/.gradle/caches/transforms-3/c0c2e08b400d9e62243738a221c7e683/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+133        </service>
+134        <service
+134-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+135            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+135-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+136            android:enabled="true"
+136-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+137            android:exported="false" >
+137-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+138            <meta-data
+138-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+139                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+139-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+140                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+140-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+141        </service>
+142
+143        <activity
+143-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+144            android:name="androidx.credentials.playservices.HiddenActivity"
+144-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+145            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+145-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+146            android:enabled="true"
+146-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+147            android:exported="false"
+147-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+148            android:fitsSystemWindows="true"
+148-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+149            android:theme="@style/Theme.Hidden" >
+149-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/onyx/.gradle/caches/transforms-3/06692d5f5833284aa14937add4296143/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+150        </activity>
+151        <activity
+151-->[com.google.android.gms:play-services-auth:21.3.0] /home/onyx/.gradle/caches/transforms-3/fca9903bbe92531e3ec129d837a9529b/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:23:9-27:75
+152            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+152-->[com.google.android.gms:play-services-auth:21.3.0] /home/onyx/.gradle/caches/transforms-3/fca9903bbe92531e3ec129d837a9529b/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:24:13-93
+153            android:excludeFromRecents="true"
+153-->[com.google.android.gms:play-services-auth:21.3.0] /home/onyx/.gradle/caches/transforms-3/fca9903bbe92531e3ec129d837a9529b/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:25:13-46
+154            android:exported="false"
+154-->[com.google.android.gms:play-services-auth:21.3.0] /home/onyx/.gradle/caches/transforms-3/fca9903bbe92531e3ec129d837a9529b/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:26:13-37
+155            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+155-->[com.google.android.gms:play-services-auth:21.3.0] /home/onyx/.gradle/caches/transforms-3/fca9903bbe92531e3ec129d837a9529b/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:27:13-72
+156        <!--
+157            Service handling Google Sign-In user revocation. For apps that do not integrate with
+158            Google Sign-In, this service will never be started.
+159        -->
+160        <service
+160-->[com.google.android.gms:play-services-auth:21.3.0] /home/onyx/.gradle/caches/transforms-3/fca9903bbe92531e3ec129d837a9529b/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:33:9-37:51
+161            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+161-->[com.google.android.gms:play-services-auth:21.3.0] /home/onyx/.gradle/caches/transforms-3/fca9903bbe92531e3ec129d837a9529b/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:34:13-89
+162            android:exported="true"
+162-->[com.google.android.gms:play-services-auth:21.3.0] /home/onyx/.gradle/caches/transforms-3/fca9903bbe92531e3ec129d837a9529b/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:35:13-36
+163            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+163-->[com.google.android.gms:play-services-auth:21.3.0] /home/onyx/.gradle/caches/transforms-3/fca9903bbe92531e3ec129d837a9529b/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:36:13-107
+164            android:visibleToInstantApps="true" />
+164-->[com.google.android.gms:play-services-auth:21.3.0] /home/onyx/.gradle/caches/transforms-3/fca9903bbe92531e3ec129d837a9529b/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:37:13-48
+165
+166        <activity
+166-->[com.google.android.gms:play-services-base:18.5.0] /home/onyx/.gradle/caches/transforms-3/0b6236b2fbe7ba4cde7b2d095d5a31a0/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+167            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+167-->[com.google.android.gms:play-services-base:18.5.0] /home/onyx/.gradle/caches/transforms-3/0b6236b2fbe7ba4cde7b2d095d5a31a0/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+168            android:exported="false"
+168-->[com.google.android.gms:play-services-base:18.5.0] /home/onyx/.gradle/caches/transforms-3/0b6236b2fbe7ba4cde7b2d095d5a31a0/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+169            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+169-->[com.google.android.gms:play-services-base:18.5.0] /home/onyx/.gradle/caches/transforms-3/0b6236b2fbe7ba4cde7b2d095d5a31a0/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+170
+171        <provider
+171-->[com.google.firebase:firebase-common:21.0.0] /home/onyx/.gradle/caches/transforms-3/c0c2e08b400d9e62243738a221c7e683/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+172            android:name="com.google.firebase.provider.FirebaseInitProvider"
+172-->[com.google.firebase:firebase-common:21.0.0] /home/onyx/.gradle/caches/transforms-3/c0c2e08b400d9e62243738a221c7e683/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+173            android:authorities="com.soundamplifier.firebaseinitprovider"
+173-->[com.google.firebase:firebase-common:21.0.0] /home/onyx/.gradle/caches/transforms-3/c0c2e08b400d9e62243738a221c7e683/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+174            android:directBootAware="true"
+174-->[com.google.firebase:firebase-common:21.0.0] /home/onyx/.gradle/caches/transforms-3/c0c2e08b400d9e62243738a221c7e683/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+175            android:exported="false"
+175-->[com.google.firebase:firebase-common:21.0.0] /home/onyx/.gradle/caches/transforms-3/c0c2e08b400d9e62243738a221c7e683/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+176            android:initOrder="100" />
+176-->[com.google.firebase:firebase-common:21.0.0] /home/onyx/.gradle/caches/transforms-3/c0c2e08b400d9e62243738a221c7e683/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+177
+178        <service
+178-->[androidx.room:room-runtime:2.6.1] /home/onyx/.gradle/caches/transforms-3/57803d8098c14ca3b443dba32c4100bd/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+179            android:name="androidx.room.MultiInstanceInvalidationService"
+179-->[androidx.room:room-runtime:2.6.1] /home/onyx/.gradle/caches/transforms-3/57803d8098c14ca3b443dba32c4100bd/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+180            android:directBootAware="true"
+180-->[androidx.room:room-runtime:2.6.1] /home/onyx/.gradle/caches/transforms-3/57803d8098c14ca3b443dba32c4100bd/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+181            android:exported="false" />
+181-->[androidx.room:room-runtime:2.6.1] /home/onyx/.gradle/caches/transforms-3/57803d8098c14ca3b443dba32c4100bd/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+182
+183        <meta-data
+183-->[com.google.android.gms:play-services-basement:18.4.0] /home/onyx/.gradle/caches/transforms-3/d1aa37fc4305d699f1b0ae6170701e33/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+184            android:name="com.google.android.gms.version"
+184-->[com.google.android.gms:play-services-basement:18.4.0] /home/onyx/.gradle/caches/transforms-3/d1aa37fc4305d699f1b0ae6170701e33/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+185            android:value="@integer/google_play_services_version" />
+185-->[com.google.android.gms:play-services-basement:18.4.0] /home/onyx/.gradle/caches/transforms-3/d1aa37fc4305d699f1b0ae6170701e33/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+186
+187        <receiver
+187-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+188            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+188-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+189            android:directBootAware="false"
+189-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+190            android:enabled="true"
+190-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+191            android:exported="true"
+191-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+192            android:permission="android.permission.DUMP" >
+192-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+193            <intent-filter>
+193-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+194                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+194-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+194-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+195            </intent-filter>
+196            <intent-filter>
+196-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+197                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+198            </intent-filter>
+199            <intent-filter>
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+200                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+200-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+200-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+201            </intent-filter>
+202            <intent-filter>
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+203                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+203-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+203-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/onyx/.gradle/caches/transforms-3/b1897b4fbfa6a4d13aa82aa837259e88/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+204            </intent-filter>
+205        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
+206        <activity
+206-->[com.google.android.play:core-common:2.0.3] /home/onyx/.gradle/caches/transforms-3/e4f4407a7bb3247a2c7ad8e793035bc0/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:14:9-18:65
+207            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+207-->[com.google.android.play:core-common:2.0.3] /home/onyx/.gradle/caches/transforms-3/e4f4407a7bb3247a2c7ad8e793035bc0/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:15:13-93
+208            android:exported="false"
+208-->[com.google.android.play:core-common:2.0.3] /home/onyx/.gradle/caches/transforms-3/e4f4407a7bb3247a2c7ad8e793035bc0/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:16:13-37
+209            android:stateNotNeeded="true"
+209-->[com.google.android.play:core-common:2.0.3] /home/onyx/.gradle/caches/transforms-3/e4f4407a7bb3247a2c7ad8e793035bc0/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:17:13-42
+210            android:theme="@style/Theme.PlayCore.Transparent" />
+210-->[com.google.android.play:core-common:2.0.3] /home/onyx/.gradle/caches/transforms-3/e4f4407a7bb3247a2c7ad8e793035bc0/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:18:13-62
+211    </application>
+212
+213</manifest>

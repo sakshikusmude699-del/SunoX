@@ -1,0 +1,2 @@
+ninja: Entering directory `/home/onyx/Documents/SoundAmplifier/app/.cxx/RelWithDebInfo/6y4ll5o1/x86_64'
+ninja: no work to do.

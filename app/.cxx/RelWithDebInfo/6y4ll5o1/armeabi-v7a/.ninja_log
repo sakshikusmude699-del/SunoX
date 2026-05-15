@@ -1,0 +1,9 @@
+# ninja log v5
+0	271	1775462462920739284	CMakeFiles/native-lib.dir/audio_processor.cpp.o	94ecb3c1cd16cc4b
+0	407	1775462463058738732	CMakeFiles/native-lib.dir/native-lib.cpp.o	ac5e65db0ffcc175
+0	480	1775462463129738449	CMakeFiles/native-lib.dir/oboe_audio_engine.cpp.o	abe391acab6a8fa2
+480	516	1775462463167738297	/home/onyx/Documents/SoundAmplifier/app/build/intermediates/cxx/RelWithDebInfo/6y4ll5o1/obj/armeabi-v7a/libnative-lib.so	d4bf57e989a53f9
+1	204	1775539657149985988	CMakeFiles/native-lib.dir/audio_processor.cpp.o	94ecb3c1cd16cc4b
+1	346	1775539657291987610	CMakeFiles/native-lib.dir/native-lib.cpp.o	ac5e65db0ffcc175
+1	432	1775539657378988604	CMakeFiles/native-lib.dir/oboe_audio_engine.cpp.o	abe391acab6a8fa2
+432	457	1775539657405988912	/home/onyx/Documents/SoundAmplifier/app/build/intermediates/cxx/RelWithDebInfo/6y4ll5o1/obj/armeabi-v7a/libnative-lib.so	d4bf57e989a53f9

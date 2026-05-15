@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/onyx/Documents/SoundAmplifier/app/.cxx/RelWithDebInfo/6y4ll5o1/arm64-v8a",
+  "command": "/home/onyx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android26 --sysroot=/home/onyx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dnative_lib_EXPORTS -I/home/onyx/Documents/SoundAmplifier/app/src/main/cpp -isystem /home/onyx/.gradle/caches/transforms-3/b421bb3b7fa235f7d8d2d3d9a4522c89/transformed/jetified-oboe-1.7.0/prefab/modules/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -O3 -ffast-math -O2 -g -DNDEBUG -fPIC -o CMakeFiles/native-lib.dir/native-lib.cpp.o -c /home/onyx/Documents/SoundAmplifier/app/src/main/cpp/native-lib.cpp",
+  "file": "/home/onyx/Documents/SoundAmplifier/app/src/main/cpp/native-lib.cpp"
+},
+{
+  "directory": "/home/onyx/Documents/SoundAmplifier/app/.cxx/RelWithDebInfo/6y4ll5o1/arm64-v8a",
+  "command": "/home/onyx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android26 --sysroot=/home/onyx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dnative_lib_EXPORTS -I/home/onyx/Documents/SoundAmplifier/app/src/main/cpp -isystem /home/onyx/.gradle/caches/transforms-3/b421bb3b7fa235f7d8d2d3d9a4522c89/transformed/jetified-oboe-1.7.0/prefab/modules/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -O3 -ffast-math -O2 -g -DNDEBUG -fPIC -o CMakeFiles/native-lib.dir/oboe_audio_engine.cpp.o -c /home/onyx/Documents/SoundAmplifier/app/src/main/cpp/oboe_audio_engine.cpp",
+  "file": "/home/onyx/Documents/SoundAmplifier/app/src/main/cpp/oboe_audio_engine.cpp"
+},
+{
+  "directory": "/home/onyx/Documents/SoundAmplifier/app/.cxx/RelWithDebInfo/6y4ll5o1/arm64-v8a",
+  "command": "/home/onyx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android26 --sysroot=/home/onyx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dnative_lib_EXPORTS -I/home/onyx/Documents/SoundAmplifier/app/src/main/cpp -isystem /home/onyx/.gradle/caches/transforms-3/b421bb3b7fa235f7d8d2d3d9a4522c89/transformed/jetified-oboe-1.7.0/prefab/modules/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -O3 -ffast-math -O2 -g -DNDEBUG -fPIC -o CMakeFiles/native-lib.dir/audio_processor.cpp.o -c /home/onyx/Documents/SoundAmplifier/app/src/main/cpp/audio_processor.cpp",
+  "file": "/home/onyx/Documents/SoundAmplifier/app/src/main/cpp/audio_processor.cpp"
+}
+]

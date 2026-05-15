@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Request deletion of your SunoX account and associated data. Data Safety and account deletion for Google Play."
+    />
+    <title>Delete your account — SunoX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Unbounded:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="bg-mesh" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="../index.html">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 5c-2.5 0-4.5 2-4.5 4.5v5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-4c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5v1.5c0 2.5-2 4.5-4.5 4.5"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          SunoX
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="../index.html">Home</a>
+          <a href="../privacy.html">Privacy</a>
+          <a href="index.html" aria-current="page">Delete account</a>
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.soundamplifier"
+            >Get the app</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main container delete-page">
+      <nav class="breadcrumb">
+        <a href="../index.html">Home</a><span>/</span>Delete account
+      </nav>
+
+      <header class="delete-hero">
+        <h1>Delete Your Account &amp; Data</h1>
+        <p class="delete-lead">
+          When you submit a request below, we will verify your identity using the email associated with your
+          account, then permanently delete your SunoX account and the personal data we hold for that account,
+          subject to the retention limits described in our policy section on this page.
+        </p>
+      </header>
+
+      <div class="delete-grid">
+        <div class="delete-form-column">
+          <div id="delete-form-panel" class="policy-card delete-card">
+            <h2 class="delete-form-title">Request account deletion</h2>
+            <p class="delete-form-intro">
+              Complete this form to start the process. You must confirm that you understand the action is
+              irreversible.
+            </p>
+
+            <form id="delete-account-form" class="delete-form" novalidate>
+              <div class="form-group">
+                <label for="delete-email">Email address <span class="req">(required)</span></label>
+                <input
+                  type="email"
+                  id="delete-email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  placeholder="you@example.com"
+                  aria-describedby="delete-email-hint"
+                />
+                <p id="delete-email-hint" class="form-hint">Use the same email as your SunoX / Google sign-in.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="delete-reason">Reason for deletion <span class="opt">(optional)</span></label>
+                <select id="delete-reason" name="reason">
+                  <option value="">Select a reason…</option>
+                  <option value="no_longer_using">No longer using the app</option>
+                  <option value="privacy">Privacy concerns</option>
+                  <option value="alternative">Found a better alternative</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="delete-comments">Additional comments <span class="opt">(optional)</span></label>
+                <textarea
+                  id="delete-comments"
+                  name="comments"
+                  rows="4"
+                  placeholder="Anything else we should know…"
+                ></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="delete-confirm" name="confirm" required />
+                  <span
+                    >I understand that this action is irreversible and all my data will be permanently
+                    deleted.</span
+                  >
+                </label>
+              </div>
+
+              <p id="delete-form-error" class="form-error" role="alert" hidden></p>
+
+              <button type="submit" class="btn btn-primary btn-submit-delete">Request Account Deletion</button>
+            </form>
+          </div>
+
+          <div
+            id="delete-success-panel"
+            class="policy-card delete-card success-panel"
+            hidden
+            role="status"
+            aria-live="polite"
+          >
+            <div class="success-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h2 class="success-title">Request received</h2>
+            <p class="success-message">
+              Your account deletion request has been submitted. You will receive a confirmation email within 24
+              hours. Your data will be permanently deleted within 30 days.
+            </p>
+            <p class="success-note">
+              If your email client opened a draft message to our team, you may send it to help us match your
+              request. Questions?
+              <a href="mailto:support@soundamplifier.app">support@soundamplifier.app</a>
+            </p>
+          </div>
+        </div>
+
+        <aside class="delete-aside">
+          <div class="policy-card delete-card aside-card">
+            <h2>What will be deleted</h2>
+            <p class="aside-intro">After your request is verified and processed, we remove:</p>
+            <ul class="data-delete-list">
+              <li>
+                <span class="list-check" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Account profile information
+              </li>
+              <li>
+                <span class="list-check" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Usage history
+              </li>
+              <li>
+                <span class="list-check" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Audio recordings and generated content
+              </li>
+              <li>
+                <span class="list-check" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Any stored preferences
+              </li>
+              <li>
+                <span class="list-check" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                OAuth tokens and authentication data
+              </li>
+            </ul>
+          </div>
+
+          <div class="policy-card delete-card aside-card policy-deletion">
+            <h2>Data deletion policy</h2>
+            <ul class="policy-bullets">
+              <li>
+                <strong>Processing time.</strong> We process complete account deletion requests within
+                <strong>30 days</strong> of verification, unless a shorter period is required by law.
+              </li>
+              <li>
+                <strong>Legal retention.</strong> A limited subset of data may be retained for up to
+                <strong>90 days</strong> where necessary for legal, regulatory, tax, or security obligations
+                (for example fraud prevention or responding to valid legal process). After that period, such
+                data is deleted or irreversibly anonymized where permitted.
+              </li>
+              <li>
+                <strong>Questions.</strong> For status updates or concerns about deletion,
+                <a href="mailto:support@soundamplifier.app">support@soundamplifier.app</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">© <span id="y"></span> SunoX. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="../privacy.html">Privacy policy</a>
+          <a href="index.html">Delete account</a>
+          <a href="mailto:support@soundamplifier.app">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="../main.js" defer></script>
+  </body>
+</html>

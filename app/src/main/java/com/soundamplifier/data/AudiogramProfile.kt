@@ -1,14 +1,20 @@
 package com.soundamplifier.data
 
 import androidx.room.Entity
+import androidx.room.Index
 import androidx.room.PrimaryKey
 
 // Standard audiometric frequencies in Hz
 val AUDIOGRAM_FREQUENCIES = intArrayOf(250, 500, 1000, 2000, 4000, 8000)
 
-@Entity(tableName = "audiogram_profiles")
+@Entity(
+    tableName = "audiogram_profiles",
+    indices = [Index(value = ["accountId", "createdAt"])],
+)
 data class AudiogramProfile(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
+    /** [AccountLocalIds.localKey] — Firebase uid or [AccountLocalIds.GUEST]. */
+    val accountId: String = AccountLocalIds.GUEST,
     val label: String = "My Profile",
     val createdAt: Long = System.currentTimeMillis(),
 

@@ -69,6 +69,7 @@ class AudioProcessor {
     /**
      * Simplified band gain: applies low-shelf, mid gains, and high-shelf
      * based on the 6-band audiogram profile.
+     * Uses max of the three shelves so we never attenuate when boosting one band.
      */
     private fun applyBandGains(sample: Float, sampleIndex: Int): Float {
         // Low shelf (250-500 Hz) — bands 0,1
@@ -78,9 +79,9 @@ class AudioProcessor {
         // High shelf (4k-8k Hz) — bands 4,5
         val highGain = (bandGains[4] + bandGains[5]) / 2f
 
-        // Blend gains — simplified weighted average
-        // A proper implementation would use FFT or IIR filters per band
-        return sample * ((lowGain + midGain + highGain) / 3f)
+        // Use max so boosting one band doesn't get averaged down; min 1f preserves signal
+        val gain = maxOf(lowGain, midGain, highGain, 1f)
+        return sample * gain
     }
 
     private fun compress(sample: Float): Float {
@@ -99,10 +100,11 @@ class AudioProcessor {
         }
     }
 
-    /** Set noise reduction level (0-100) → gate threshold */
+    /** Set noise reduction level (0-100) → gate threshold.
+     * Keep threshold low so we only gate very quiet noise, not speech. */
     fun setNoiseReduction(level: Int) {
-        // Map 0-100 to threshold 0.0-0.1
-        noiseGateThreshold = (level / 100f) * 0.1f
+        // Map 0-100 to threshold 0.0-0.015 (~-36 dB max) — was 0.1, which cut speech
+        noiseGateThreshold = (level / 100f) * 0.015f
     }
 
     private fun dbToLinear(db: Float): Float =

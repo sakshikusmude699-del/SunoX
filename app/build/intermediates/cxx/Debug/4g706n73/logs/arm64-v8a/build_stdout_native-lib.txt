@@ -1,0 +1,5 @@
+ninja: Entering directory `/home/onyx/Documents/SoundAmplifier/app/.cxx/Debug/4g706n73/arm64-v8a'
+[1/4] Building CXX object CMakeFiles/native-lib.dir/audio_processor.cpp.o
+[2/4] Building CXX object CMakeFiles/native-lib.dir/native-lib.cpp.o
+[3/4] Building CXX object CMakeFiles/native-lib.dir/oboe_audio_engine.cpp.o
+[4/4] Linking CXX shared library /home/onyx/Documents/SoundAmplifier/app/build/intermediates/cxx/Debug/4g706n73/obj/arm64-v8a/libnative-lib.so

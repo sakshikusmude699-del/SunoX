@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Behind hero logos (Welcome/Home); match opaque edges of main_icon assets. -->
+    <color name="logo_backdrop_light">#FFFFFF</color>
+    <color name="logo_backdrop_dark">#FFFFFF</color>
+    <!-- Match SunoXColors.LightBackground / DeepBackground so no bright seam at window edge. -->
+    <color name="suno_window_background_light">#FFF5F3FF</color>
+    <color name="suno_window_background_dark">#FF0A0A0F</color>
+</resources>

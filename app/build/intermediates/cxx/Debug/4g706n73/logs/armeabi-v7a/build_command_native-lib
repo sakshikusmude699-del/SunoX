@@ -1,0 +1,4 @@
+/home/onyx/Android/Sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /home/onyx/Documents/SoundAmplifier/app/.cxx/Debug/4g706n73/armeabi-v7a \
+  native-lib

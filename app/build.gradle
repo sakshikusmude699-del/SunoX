@@ -2,22 +2,43 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.devtools.ksp'
+    id 'com.google.gms.google-services'
+}
+
+def keystorePropertiesFile = rootProject.file('keystore.properties')
+def keystoreProperties = new Properties()
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 }
 
 android {
     namespace 'com.soundamplifier'
-    compileSdk 34
+    compileSdk 35
+    ndkVersion "25.1.8937393"
 
     defaultConfig {
         applicationId "com.soundamplifier"
         minSdk 26
-        targetSdk 34
-        versionCode 1
-        versionName "1.0"
+        targetSdk 35
+        versionCode 5
+        versionName "1.0.4"
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++17 -O3 -ffast-math"
+                arguments "-DANDROID_STL=c++_shared"
+            }
+        }
     }
 
     buildFeatures {
         compose true
+        prefab true
+    }
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+            version "3.22.1"
+        }
     }
 
     composeOptions {
@@ -32,9 +53,36 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
+
+    signingConfigs {
+        release {
+            if (keystorePropertiesFile.exists()) {
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile rootProject.file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            if (keystorePropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+            } else {
+                // Local / CI export only — use upload keystore for Play production (see keystore.properties.example).
+                signingConfig signingConfigs.debug
+            }
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
 }
 
 dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+
     // Compose BOM
     def composeBom = platform('androidx.compose:compose-bom:2024.02.00')
     implementation composeBom
@@ -42,7 +90,10 @@ dependencies {
     implementation 'androidx.compose.ui:ui'
     implementation 'androidx.compose.ui:ui-graphics'
     implementation 'androidx.compose.ui:ui-tooling-preview'
+    implementation 'androidx.compose.ui:ui-text-google-fonts'
     implementation 'androidx.compose.material3:material3'
+    implementation 'androidx.compose.material:material'
+    implementation 'androidx.compose.material:material-icons-extended'
     implementation 'androidx.activity:activity-compose:1.8.2'
     implementation 'androidx.navigation:navigation-compose:2.7.6'
 
@@ -58,8 +109,13 @@ dependencies {
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
 
-    // Oboe (low-latency audio) via JNI — using AudioRecord/AudioTrack directly for simplicity
-    // Add oboe if native DSP is needed later
+    implementation platform('com.google.firebase:firebase-bom:33.5.1')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'com.google.android.gms:play-services-auth:21.3.0'
+
+    // Oboe (low-latency audio) - prefab for native layer
+    implementation 'com.google.oboe:oboe:1.7.0'
 
     debugImplementation 'androidx.compose.ui:ui-tooling'
 }

@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/drawable-night-nodpi_main_icon.png.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/drawable-night-nodpi/main_icon.png"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/drawable-nodpi_icon.png.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/drawable-nodpi/icon.png"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.soundamplifier.app-merged_res-68:/drawable-nodpi_main_icon.jpg.flat",
+        "source": "com.soundamplifier.app-main-70:/drawable-nodpi/main_icon.jpg"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/xml_locales_config.xml.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/xml/locales_config.xml"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.soundamplifier.app-merged_res-68:/drawable-night-nodpi_main_icon.jpg.flat",
+        "source": "com.soundamplifier.app-main-70:/drawable-night-nodpi/main_icon.jpg"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/drawable_ic_logo_google.xml.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/drawable/ic_logo_google.xml"
+    },
+    {
+        "merged": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-merged_res-68:/drawable-nodpi_main_icon.png.flat",
+        "source": "/home/onyx/.gradle/daemon/8.4/com.soundamplifier.app-main-70:/drawable-nodpi/main_icon.png"
+    }
+]

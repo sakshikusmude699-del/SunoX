@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"హోమ్‌కు నావిగేట్ చేస్తుంది"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"పైకి నావిగేట్ చేస్తుంది"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"మరిన్ని ఆప్షన్‌లు"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"పూర్తయింది"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"అన్నీ చూడండి"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"యాప్‌ను ఎంచుకోండి"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"ఆఫ్"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ఆన్"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"స్పేస్"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"సెర్చ్ చేయండి…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"ప్రశ్నను తీసివేస్తుంది"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"సెర్చ్ క్వెరీ"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"సెర్చ్"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"ప్రశ్నని సమర్పిస్తుంది"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"వాయిస్ సెర్చ్"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"వీరితో షేర్ చేస్తుంది"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g>తో షేర్ చేస్తుంది"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"కుదిస్తుంది"</string>
+    <string name="amplifier_brand">SunoX</string>
+    <string name="amplifier_no_headphone_warning">హెడ్‌ఫోన్‌లు కనుగొనబడలేదు. స్పష్టమైన ధ్వని మరియు తక్కువ ఫీడ్‌బ్యాక్ కోసం హెడ్‌ఫోన్‌లు వాడండి.</string>
+    <string name="amplifier_presets_heading">ప్రీసెట్లు</string>
+    <string name="amplifier_subtitle">ఆంప్లిఫైర్</string>
+    <string msgid="8397015543330865059" name="android.credentials.TYPE_PASSWORD_CREDENTIAL">"పాస్‌వర్డ్"</string>
+    <string msgid="3929015085059320822" name="androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL">"పాస్-కీ"</string>
+    <string name="app_name">SunoX</string>
+    <string name="audiogram_cant_hear">వినిపించడం లేదు</string>
+    <string name="audiogram_complete">పరీక్ష పూర్తయింది! మీ ప్రొఫైల్ సేవ్ అయ్యింది.</string>
+    <string name="audiogram_frequency_hz">ఫ్రీక్వెన్సీ: %1$d హెర్ట్జ్</string>
+    <string name="audiogram_go_amplifier">ఆంప్లిఫైర్‌కి వెళ్లండి</string>
+    <string name="audiogram_headphones_hint">ఖచ్చితమైన ఫలితాలకు నిశ్శబ్ద వాతావరణంలో హెడ్‌ఫోన్ ఉపయోగించండి.</string>
+    <string name="audiogram_hear">నాకు వినిపిస్తోంది</string>
+    <string name="audiogram_now_right">ఇప్పుడు కుడి చెవి పరీక్ష</string>
+    <string name="audiogram_press_start">పరీక్ష ప్రారంభించడానికి ప్రారంభించు నొక్కండి</string>
+    <string name="audiogram_start">వినికిడి పరీక్ష ప్రారంభించండి</string>
+    <string name="audiogram_test_left_intro">ఎడమ చెవి — నిశ్శబ్ద ప్రదేశంలో హెడ్‌ఫోన్ ధరించండి</string>
+    <string name="audiogram_testing_left_hz">ఎడమ చెవి — %1$d హెర్ట్జ్</string>
+    <string name="audiogram_testing_right_hz">కుడి చెవి — %1$d హెర్ట్జ్</string>
+    <string name="audiogram_title">వినికిడి పరీక్ష</string>
+    <string name="boost_quiet_sounds">నిశ్శబ్ద ధ్వనులను పెంచండి</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"పికప్ చేయండి"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"వీడియో కాల్"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"కట్ చేయండి"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"ముగించండి"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"ఇన్‌కమింగ్ కాల్"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"కాల్ కొనసాగుతోంది"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"ఇన్‌కమింగ్ కాల్‌ను స్క్రీన్ చేయండి"</string>
+    <string name="cd_app_logo">SunoX</string>
+    <string name="cd_google_logo">Google</string>
+    <string name="cd_start">ప్రారంభించు</string>
+    <string name="cd_stop">ఆపు</string>
+    <string msgid="406453423630273620" name="close_drawer">"నావిగేషన్ మెనూను మూసివేయి"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"షీట్‌ను మూసివేయి"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">ప్రారంభించండి</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">మీరు Google Play సేవలను ప్రారంభిస్తే మినహా %1$s పని చేయదు.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play సేవలను ప్రారంభించండి</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">ఇన్‌స్టాల్ చేయి</string>
+    <string name="common_google_play_services_install_text">%1$s Google Play సేవలు లేకుండా అమలు కాదు, ఆ సేవలు మీ పరికరంలో లేవు.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play సేవలను పొందండి</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play సేవల లభ్యత</string>
+    <string name="common_google_play_services_notification_ticker">Google Play సేవల ఎర్రర్</string>
+    <string name="common_google_play_services_unknown_issue">%1$s Google Play సేవలతో సమస్య కలిగి ఉంది. దయచేసి మళ్లీ ట్రై చేయండి.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s Google Play సేవలు లేకుండా అమలు కాదు, ఈ సేవలకు మీ పరికరంలో మద్దతు లేదు.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">అప్‌డేట్ చేయి</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">మీరు Google Play సేవలను నవీకరిస్తే మినహా %1$s అమలు కాదు.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play సేవలను అప్‌డేట్ చేయండి</string>
+    <string name="common_google_play_services_updating_text">%1$s Google Play సేవలు లేకుండా అమలు కాదు, ఆ సేవలు ప్రస్తుతం నవీకరించబడుతున్నాయి.</string>
+    <string name="common_google_play_services_wear_update_text">కొత్త Google Play సేవల వెర్షన్ అవసరం. అది కొద్ది సేపట్లో దానంతట అదే అప్‌డేట్ చేయబడుతుంది.</string>
+    <string name="common_open_on_phone">ఫోన్‌లో తెరువు</string>
+    <string name="common_signin_button_text">సైన్ ఇన్ చేయండి</string>
+    <string name="common_signin_button_text_long">Googleతో సైన్ ఇన్ చేయండి</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"క్లిప్‌బోర్డ్‌కు లింక్ కాపీ చేయబడింది"</string>
+    <string name="db_format">%1$.0f డీబీ</string>
+    <string msgid="8038256446254964252" name="default_error_message">"ఇన్‌పుట్ చెల్లదు"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"పాప్-అప్ విండో"</string>
+    <string name="done">పూర్తయింది</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"డ్రాప్‌డౌన్ మెనూ"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"లింక్‌ను కాపీ చేయి"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"బ్రౌజర్‌లో తెరువు"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"లింక్‌ను షేర్ చేయి"</string>
+    <string name="faq_10_body">అవును. మంచి నాణ్యత ఇయర్‌ఫోన్లు ఉపయోగించడం వినడం అనుభవం మరియు ధ్వని స్పష్టతను గణనీయంగా మెరుగుపరుస్తుంది.</string>
+    <string name="faq_10_title">ఇయర్‌ఫోన్లు ప్రదర్శనను ప్రభావితం చేస్తాయా?</string>
+    <string name="faq_11_body">ఉత్తమ ఫలితాల కోసం:\n\nమంచి నాణ్యత ఇయర్‌ఫోన్లు ఉపయోగించండి.\n\nమీ ఫోన్‌ను ఆడియో మూలానికి సమీపంలో ఉంచండి (ఉదా. టీవీ లేదా స్పీకర్ దగ్గర)\n\nవ్యక్తిగతీకరించిన ఆడియో ప్రొఫైల్స్ ఉపయోగించండి</string>
+    <string name="faq_11_title">ఉత్తమ శ్రవణ అనుభవం ఎలా పొందగలను?</string>
+    <string name="faq_12_body">రోజువారీ జీవితంలో మెరుగైన ధ్వని స్పష్టత లేదా తేలికపాటి శ్రవణ మద్దత కావాలనుకునే ఎవరైనా.</string>
+    <string name="faq_12_title">SunoX ఎవరు ఉపయోగించాలి?</string>
+    <string name="faq_1_body">SunoX వ్యక్తిగతీకరించిన ఆడియో సెట్టింగ్‌లను ఉపయోగించి ధ్వని స్పష్టతను మెరుగుపరిచే వినడంలో సహాయక యాప్.</string>
+    <string name="faq_1_title">SunoX అంటే ఏమిటి?</string>
+    <string name="faq_2_body">కాదు. SunoX వైద్య పరికరం కాదు మరియు ప్రొఫెషనల్ హీరింగ్ ఎయిడ్‌లకు ప్రత్యామ్నాయం కాదు. ఇది సాధారణ శ్రవణ మద్దతు కోసం రూపొందించబడింది.</string>
+    <string name="faq_2_title">SunoX వైద్య శ్రవణ సాధనమా?</string>
+    <string name="faq_3_body">అవును. SunoX 7 రోజుల ఉచిత ట్రయల్ ఇస్తుంది. ఆ తర్వాత ₹99కు సబ్‌స్క్రైబ్ చేయవచ్చు.</string>
+    <string name="faq_3_title">యాప్ ఉచితమా?</string>
+    <string name="faq_4_body">7 రోజుల తర్వాత ప్రీమియం ఫీచర్లను కొనసాగించడానికి ₹99 సబ్‌స్క్రిప్షన్ అవసరం.</string>
+    <string name="faq_4_title">ట్రయల్ ముగిసిన తర్వాత ఏమి జరుగుతుంది?</string>
+    <string name="faq_5_body">అవును. సబ్‌స్క్రిప్షన్ తర్వాత అన్ని భవిష్యత్ అప్‌గ్రేడ్‌లు మరియు అప్‌డేట్లు ఉచితం.</string>
+    <string name="faq_5_title">భవిష్యత్ అప్‌డేట్లు ఉచితమా?</string>
+    <string name="faq_6_body">ఇది మీ ఆడియో సెట్టింగ్‌లను వ్యక్తిగతీకరించడంలో సహాయపడే యాప్‌లోని త్వరిత శ్రవణ పరీక్ష.</string>
+    <string name="faq_6_title">ఆడియోగ్రామ్ పరీక్ష అంటే ఏమిటి?</string>
+    <string name="faq_7_body">పరీక్షకు సుమారు 7–8 నిమిషాలు పడుతుంది.</string>
+    <string name="faq_7_title">ఆడియోగ్రామ్ పరీక్షకు ఎంత సమయం పడుతుంది?</string>
+    <string name="faq_8_body">మంచి అనుభవం కోసం సిఫారసు చేయబడింది; ఇది మీ వినికిడి అవసరాలకు అనుగుణంగా ధ్వనిని సరిచేయడంలో సహాయపడుతుంది.</string>
+    <string name="faq_8_title">నాకు ఆడియోగ్రామ్ పరీక్ష తీసుకోవాలా?</string>
+    <string name="faq_9_body">వివిధ పరిసరాల కోసం అనుకూలిత ధ్వని సెట్టింగ్‌లను సేవ్ చేసి మార్చడానికి ఇవి అనుమతిస్తాయి.</string>
+    <string name="faq_9_title">ఆడియో ప్రొఫైల్స్ అంటే ఏమిటి?</string>
+    <string name="faq_intro">SunoX, చందా, ఆడియోగ్రామ్ పరీక్ష మరియు స్పష్టమైన ధ్వని కోసం చిట్కాల గురించి.</string>
+    <string name="faq_title">సహాయం &amp; FAQ</string>
+    <string name="freq_high">ఎక్కువ</string>
+    <string name="freq_low">తక్కువ</string>
+    <string name="frequency_boost">ఫ్రీక్వెన్సీ బూస్ట్</string>
+    <string name="frequency_boost_format">%1$s ఫ్రీక్వెన్సీ బూస్ట్</string>
+    <string name="google_sign_in_not_configured">Google సైన్-ఇన్ ఇంకా సెటప్ చేయలేదు. Firebase కన్సోల్‌లో ప్రారంభించండి, SHA-1 చేర్చండి.</string>
+    <string name="hearing_test_answer_hint">కింద బటన్‌ను ట్యాప్ చేయండి</string>
+    <string name="hearing_test_complete">పరీక్ష పూర్తయింది!</string>
+    <string name="hearing_test_continue">కొనసాగించండి</string>
+    <string name="hearing_test_freq_progress">ఫ్రీక్వెన్సీ %1$d / 6</string>
+    <string name="hearing_test_i_cant">నాకు వినిపించడం లేదు</string>
+    <string name="hearing_test_i_hear">నాకు వినిపిస్తోంది</string>
+    <string name="hearing_test_intro">ప్రతి చెవికి 6 ఫ్రీక్వెన్సీలలో ఈ పరీక్ష మీ వినికిడిని కొలుస్తుంది. హెడ్‌ఫోన్‌లు ధరించి నిశ్శబ్ద ప్రదేశంలో ఉండండి.</string>
+    <string name="hearing_test_left_avg">ఎడమ చెవి సగటు థ్రెషోల్డ్: %1$s dB HL</string>
+    <string name="hearing_test_left_complete">ఎడమ చెవి పూర్తయింది!</string>
+    <string name="hearing_test_left_ear">ఎడమ చెవి పరీక్షిస్తున్నాము</string>
+    <string name="hearing_test_mild">తేలికపాటి వినికిడి తగ్గుదల</string>
+    <string name="hearing_test_mod_severe">మధ్యస్తంగా తీవ్ర వినికిడి తగ్గుదల</string>
+    <string name="hearing_test_moderate">మోస్తర వినికిడి తగ్గుదల</string>
+    <string name="hearing_test_my_profile">నా వినికిడి ప్రొఫైల్</string>
+    <string name="hearing_test_normal">సహజ వినికిడి</string>
+    <string name="hearing_test_playing_hint">వింటున్నారా…</string>
+    <string name="hearing_test_profile_applied">మీ వినికిడి ప్రొఫైల్ వర్తింపజేయబడింది</string>
+    <string name="hearing_test_result_avgs">ఎడమ సగటు: %1$s dB HL · కుడి సగటు: %2$s dB HL</string>
+    <string name="hearing_test_retake">పరీక్ష మళ్లీ</string>
+    <string name="hearing_test_right_ear">కుడి చెవి పరీక్షిస్తున్నాము</string>
+    <string name="hearing_test_save">సేవ్ చేసి వర్తింపజేయండి</string>
+    <string name="hearing_test_severe">తీవ్ర వినికిడి తగ్గుదల</string>
+    <string name="hearing_test_start">పరీక్ష ప్రారంభించండి</string>
+    <string name="hearing_test_time">సుమారు 3–5 నిమిషాలు</string>
+    <string name="hearing_test_title">వినికిడి పరీక్ష</string>
+    <string name="hearing_test_transition">ఇప్పుడు కుడి చూస్తాము</string>
+    <string name="hearing_test_transition_body">ఇప్పుడు మీ కుడి చెవిని పరీక్షిస్తాము. అవసరమైతే హెడ్‌ఫోన్‌లు మార్చండి.</string>
+    <string name="home_open_amplifier">ఆంప్లిఫైర్ తెరవండి</string>
+    <string name="home_take_test">వినికిడి పరీక్ష (ఆడియోగ్రామ్)</string>
+    <string name="home_test_active">వినికిడి ప్రొఫైల్ సక్రియం</string>
+    <string name="home_test_prompt">మీ అనుభవాన్ని వ్యక్తిగతీకరించడానికి త్వరిత వినికిడి పరీక్ష తీసుకోండి</string>
+    <string name="home_test_prompt_dismiss">మళ్లీ చూపవద్దు</string>
+    <string name="home_test_prompt_skip">ఇప్పుడే దాటవేయి</string>
+    <string name="home_tip">చిట్కా: ఆంప్లిఫైర్ సెట్టింగ్‌లు స్వయంచాలకంగా అమర్చబడడానికి ముందుగా వినికిడి పరీక్ష తీసుకోండి.</string>
+    <string msgid="6827826412747255547" name="in_progress">"ప్రోగ్రెస్‌లో ఉంది"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"పాక్షికంగా ఎంచుకోబడింది"</string>
+    <string name="input_level">ఇన్‌పుట్ స్థాయి</string>
+    <string name="language_english">English</string>
+    <string name="language_gujarati">ગુજરાતી (Gujarati)</string>
+    <string name="language_hindi">हिन्दी (Hindi)</string>
+    <string name="language_marathi">मराठी (Marathi)</string>
+    <string name="language_tamil">தமிழ் (Tamil)</string>
+    <string name="language_telugu">తెలుగు (Telugu)</string>
+    <string msgid="2988463736136100848" name="m3c_bottom_sheet_collapse_description">"దిగువున ఉన్న షీట్‌ను కుదిస్తుంది"</string>
+    <string msgid="1555567894577437024" name="m3c_bottom_sheet_dismiss_description">"దిగువున ఉన్న షీట్‌ను విస్మరిస్తుంది"</string>
+    <string msgid="8403354765404029791" name="m3c_bottom_sheet_drag_handle_description">"లాగే హ్యాండిల్"</string>
+    <string msgid="6670819569745899763" name="m3c_bottom_sheet_expand_description">"దిగువున ఉన్న షీట్‌ను విస్తరిస్తుంది"</string>
+    <string msgid="3010635850035863127" name="m3c_bottom_sheet_pane_title">"దిగువున ఉన్న షీట్"</string>
+    <string msgid="8166741421776570875" name="m3c_date_input_headline">"ఎంటర్ చేసిన తేదీ"</string>
+    <string msgid="229313757840775812" name="m3c_date_input_headline_description">"ఎంటర్ చేసిన తేదీ: %1$s"</string>
+    <string msgid="6116910750161463197" name="m3c_date_input_invalid_for_pattern">"తేదీ, ఉండాల్సిన ఫార్మాట్‌తో మ్యాచ్ కాలేదు: %1$s"</string>
+    <string msgid="2521768508935305279" name="m3c_date_input_invalid_not_allowed">"చెల్లని తేదీ: %1$s"</string>
+    <string msgid="7052898923934555305" name="m3c_date_input_invalid_year_range">"ఉండాల్సిన సంవత్సరాల పరిధి %1$s - %2$s‌లో తేదీ లేదు"</string>
+    <string msgid="2895559812010326913" name="m3c_date_input_label">"తేదీ"</string>
+    <string msgid="1237013946323089826" name="m3c_date_input_no_input_description">"ఏదీ లేదు"</string>
+    <string msgid="7306227249789210568" name="m3c_date_input_title">"తేదీని ఎంచుకోండి"</string>
+    <string msgid="7605002211875882969" name="m3c_date_picker_headline">"ఎంచుకున్న తేదీ"</string>
+    <string msgid="3664277305226978227" name="m3c_date_picker_headline_description">"ప్రస్తుత ఎంపిక: %1$s"</string>
+    <string msgid="8436650776581492840" name="m3c_date_picker_navigate_to_year_description">"%1$s సంవత్సరానికి వెళ్లండి"</string>
+    <string msgid="5811000998184572395" name="m3c_date_picker_no_selection_description">"ఏదీ లేదు"</string>
+    <string msgid="7813882352367152251" name="m3c_date_picker_scroll_to_earlier_years">"మునుపటి సంవత్సరాల డేటాను చూడటానికి స్క్రోల్ చేయండి"</string>
+    <string msgid="5727367015496556177" name="m3c_date_picker_scroll_to_later_years">"తర్వాతి సంవత్సరాల డేటాను చూడటానికి స్క్రోల్ చేయండి"</string>
+    <string msgid="1804346892470238807" name="m3c_date_picker_switch_to_calendar_mode">"క్యాలెండర్ ఇన్‌పుట్ మోడ్‌కు మారండి"</string>
+    <string msgid="395627960681594326" name="m3c_date_picker_switch_to_day_selection">"సంవత్సరాన్ని ఎంచుకోవడానికి స్వైప్ చేయండి, లేదా తిరిగి రోజును ఎంచుకునేందుకు మారడానికి ట్యాప్ చేయండి"</string>
+    <string msgid="2219746470065162704" name="m3c_date_picker_switch_to_input_mode">"టెక్స్ట్ ఇన్‌పుట్ మోడ్‌కు మారండి"</string>
+    <string msgid="7142101321095356500" name="m3c_date_picker_switch_to_next_month">"వచ్చే నెలకు మార్చండి"</string>
+    <string msgid="228438865139394590" name="m3c_date_picker_switch_to_previous_month">"మునుపటి నెలకు మార్చండి"</string>
+    <string msgid="791651718641787594" name="m3c_date_picker_switch_to_year_selection">"సంవత్సరాన్ని ఎంచుకునే ఆప్షన్‌కు మారండి"</string>
+    <string msgid="7430790972741451689" name="m3c_date_picker_title">"తేదీని ఎంచుకోండి"</string>
+    <string msgid="3199387177749801575" name="m3c_date_picker_today_description">"నేడు"</string>
+    <string msgid="2068382232816991922" name="m3c_date_picker_year_picker_pane_title">"సంవత్సరం పికర్ కనిపిస్తుంది"</string>
+    <string msgid="3190049423327661366" name="m3c_date_range_input_invalid_range_input">"తేదీల పరిధి ఇన్‌పుట్ చెల్లదు"</string>
+    <string msgid="3148384720560189467" name="m3c_date_range_input_title">"తేదీలను ఎంటర్ చేయండి"</string>
+    <string msgid="2138321128465719402" name="m3c_date_range_picker_day_in_range">"పరిధిలో ఉంది"</string>
+    <string msgid="4947636797751277713" name="m3c_date_range_picker_end_headline">"ముగింపు తేదీ"</string>
+    <string msgid="602077859540990149" name="m3c_date_range_picker_scroll_to_next_month">"వచ్చే నెల డేటాను చూడటానికి స్క్రోల్ చేయండి"</string>
+    <string msgid="4592174524846109496" name="m3c_date_range_picker_scroll_to_previous_month">"మునుపటి నెల డేటాను చూడటానికి స్క్రోల్ చేయండి"</string>
+    <string msgid="4665981448952749820" name="m3c_date_range_picker_start_headline">"ప్రారంభ తేదీ"</string>
+    <string msgid="3134165431120340385" name="m3c_date_range_picker_title">"తేదీలను ఎంచుకోండి"</string>
+    <string msgid="7617233117134790350" name="m3c_dialog">"డైలాగ్"</string>
+    <string msgid="3177828188723359358" name="m3c_dropdown_menu_collapsed">"కుదించబడింది"</string>
+    <string msgid="2360841780724299882" name="m3c_dropdown_menu_expanded">"విస్తరించబడింది"</string>
+    <string msgid="6152806324422087846" name="m3c_search_bar_search">"సెర్చ్ చేయండి"</string>
+    <string msgid="6152755701819882931" name="m3c_snackbar_dismiss">"విస్మరించండి"</string>
+    <string msgid="7655536806087401899" name="m3c_suggestions_available">"సూచనలు దిగువున ఉన్నాయి"</string>
+    <string msgid="2786685010796619560" name="m3c_time_picker_am">"AM"</string>
+    <string msgid="2349193472625211372" name="m3c_time_picker_hour">"గంట"</string>
+    <string msgid="9179527532316922345" name="m3c_time_picker_hour_24h_suffix">"%1$d గంటలు"</string>
+    <string msgid="8876759303332837035" name="m3c_time_picker_hour_selection">"గంటలను ఎంచుకోవడానికి వీలు కల్పిస్తుంది"</string>
+    <string msgid="3458167507790628988" name="m3c_time_picker_hour_suffix">"%1$d గం"</string>
+    <string msgid="6973808109666874069" name="m3c_time_picker_hour_text_field">"గంటలను ఎంచుకోవడం కోసం"</string>
+    <string msgid="4313071914266462005" name="m3c_time_picker_minute">"నిమిషం"</string>
+    <string msgid="4699133535056739733" name="m3c_time_picker_minute_selection">"నిమిషాలను ఎంచుకోండి"</string>
+    <string msgid="5064177921781937179" name="m3c_time_picker_minute_suffix">"%1$d నిమిషాలు"</string>
+    <string msgid="7661234488295443182" name="m3c_time_picker_minute_text_field">"నిమిషాలను ఎంచుకోవడం కోసం"</string>
+    <string msgid="5865171949528594571" name="m3c_time_picker_period_toggle_description">"AM లేదా PMను ఎంచుకోండి"</string>
+    <string msgid="6616362054113087709" name="m3c_time_picker_pm">"PM"</string>
+    <string msgid="1805687647081129904" name="m3c_tooltip_long_press_label">"టూల్‌టిప్‌ను చూడండి"</string>
+    <string msgid="5460405025248574620" name="m3c_tooltip_pane_description">"టూల్‌టిప్"</string>
+    <string name="mic_label_bluetooth">Bluetooth మైక్</string>
+    <string name="mic_label_phone">ఫోన్ మైక్</string>
+    <string name="mic_label_system_default">సిస్టం డిఫాల్ట్</string>
+    <string name="mic_label_wired">వైర్డ్ మైక్</string>
+    <string name="nav_amplifier">ఆంప్లిఫైర్</string>
+    <string name="nav_back">వెనక్కి</string>
+    <string name="nav_faq">సహాయం &amp; ప్రశ్నలు</string>
+    <string name="nav_home">హోమ్</string>
+    <string name="nav_menu">మెను</string>
+    <string name="nav_presets">ప్రీసెట్లు</string>
+    <string name="nav_settings">సెట్టింగ్స్</string>
+    <string name="nav_sign_in_switch_account">సైన్ ఇన్ / ఖాతా మార్చు</string>
+    <string msgid="542007171693138492" name="navigation_menu">"నావిగేషన్ మెనూ"</string>
+    <string msgid="6610465462668679431" name="not_selected">"ఎంచుకోబడలేదు"</string>
+    <string msgid="875452955155264703" name="off">"ఆఫ్‌లో ఉంది"</string>
+    <string msgid="8655164131929253426" name="on">"ఆన్‌లో ఉంది"</string>
+    <string name="open_menu">మెనూను తెరవండి</string>
+    <string name="output_level">అవుట్‌పుట్ స్థాయి</string>
+    <string name="preset_classroom">తరగతి గది</string>
+    <string name="preset_conversation">సంభాషణ</string>
+    <string name="preset_custom">కస్టమ్</string>
+    <string name="preset_music">సంగీతం</string>
+    <string name="preset_outdoors">అవుట్‌డోర్</string>
+    <string name="preset_tv">టీవీ / మీడియా</string>
+    <string name="profile_active_badge">యాక్టివ్</string>
+    <string name="profile_display_name">ప్రదర్శన పేరు</string>
+    <string name="profile_email">ఇమెయిల్</string>
+    <string name="profile_guest_message">మీరు అతిథిగా SunoX ఉపయోగిస్తున్నారు. సాధనాలలో ప్రొఫైళ్లను సేవ్ చేయడానికి లాగిన్ అవ్వండి.</string>
+    <string name="profile_hearing_profiles">వినికిడి ప్రొఫైళ్లు</string>
+    <string name="profile_left_avg">ఎడమ సగటు</string>
+    <string name="profile_login">లాగిన్</string>
+    <string name="profile_logout">లాగ్ అవుట్</string>
+    <string name="profile_name_placeholder">మీ పేరు జోడించండి</string>
+    <string name="profile_name_updated">పేరు నవీకరించబడింది</string>
+    <string name="profile_no_audiograms">ఇంకా వినికిడి పరీక్షలు సేవ్ కాలేదు. ప్రారంభించడానికి పరీక్ష తీసుకోండి.</string>
+    <string name="profile_not_linked">లింక్ చేయలేదు</string>
+    <string name="profile_phone">ఫోన్ నంబర్</string>
+    <string name="profile_right_avg">కుడి సగటు</string>
+    <string name="profile_title">నా ప్రొఫైల్</string>
+    <string msgid="5941395253238309765" name="range_end">"పరిధి ముగిసింది"</string>
+    <string msgid="7097486360902471446" name="range_start">"పరిధి ప్రారంభమయింది"</string>
+    <string name="save_preset_cancel">రద్దు</string>
+    <string name="save_preset_delete">తొలగించు</string>
+    <string name="save_preset_delete_confirm">ఈ ప్రీసెట్‌ను తొలగించాలా?</string>
+    <string name="save_preset_hint">ఉదా. నా సెట్టింగ్‌లు, చర్చి, కార్యాలయం</string>
+    <string name="save_preset_row_button">కస్టమ్ ప్రీసెట్‌గా సేవ్ చేయండి</string>
+    <string name="save_preset_row_help">కస్టమ్ ప్రీసెట్ కోసం స్లైడర్లను సర్దుబాటు చేయండి.</string>
+    <string name="save_preset_row_ready">ప్రస్తుత సెట్టింగ్‌లను ప్రీసెట్‌గా సేవ్ చేయండి.</string>
+    <string name="save_preset_save">సేవ్</string>
+    <string name="save_preset_saved">ప్రీసెట్ సేవ్ చేయబడింది</string>
+    <string name="save_preset_title">కస్టమ్ ప్రీసెట్‌ను సేవ్ చేయండి</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"సెర్చ్"</string>
+    <string msgid="6043586758067023" name="selected">"ఎంచుకోబడింది"</string>
+    <string name="settings_hearing_section">వినికిడి</string>
+    <string name="settings_language_hint">యాప్ భాషను ఎంచుకోండి. యాప్ మళ్లీ లోడ్ అవుతుంది.</string>
+    <string name="settings_language_section">భాష</string>
+    <string name="settings_last_tested">చివరి పరీక్ష: %1$s</string>
+    <string name="settings_retake_test">వినికిడి పరీక్ష మళ్లీ</string>
+    <string name="settings_title">సెట్టింగ్స్</string>
+    <string name="sidebar_retake_test">వినికిడి పరీక్ష మళ్లీ</string>
+    <string name="status_active">సક్రియం</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="status_inactive">సక్రియం కాదు</string>
+    <string msgid="2561197295334830845" name="switch_role">"Switch"</string>
+    <string msgid="1672349317127674378" name="tab">"ట్యాబ్"</string>
+    <string name="tap_to_start">ప్రారంభించడానికి టాప్ చేయండి</string>
+    <string name="tap_to_stop">ఆపడానికి టాప్ చేయండి</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> శాతం."</string>
+    <string name="theme_dark_mode">డార్క్ మోడ్</string>
+    <string name="theme_light_mode">లైట్ మోడ్</string>
+    <string name="toast_mic_switched">%1$s కి మార్చబడింది.</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"టూల్‌టిప్"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"టూల్‌టిప్‌ను చూపించండి"</string>
+    <string name="welcome_login_google">Googleతో లాగిన్</string>
+    <string name="welcome_tagline">వ్యక్తిగత వినికిడి మెరుగుదల</string>
+    <string name="welcome_terms">కొనసాగించడంతో మీరు మా సేవా నిబంధనలకు అంగీకరిస్తున్నారు</string>
+    <string name="welcome_title">SunoX</string>
+</resources>

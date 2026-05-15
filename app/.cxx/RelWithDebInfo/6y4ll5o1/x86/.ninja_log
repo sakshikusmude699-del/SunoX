@@ -1,0 +1,9 @@
+# ninja log v5
+0	172	1775462463740736010	CMakeFiles/native-lib.dir/audio_processor.cpp.o	da5a1b4084f1de31
+0	281	1775462463848735579	CMakeFiles/native-lib.dir/native-lib.cpp.o	131104aa85bb821
+0	377	1775462463932735244	CMakeFiles/native-lib.dir/oboe_audio_engine.cpp.o	d2ee34184e6d0168
+377	400	1775462463968735100	/home/onyx/Documents/SoundAmplifier/app/build/intermediates/cxx/RelWithDebInfo/6y4ll5o1/obj/x86/libnative-lib.so	727d259a55b0a099
+2	200	1775539657627991447	CMakeFiles/native-lib.dir/audio_processor.cpp.o	da5a1b4084f1de31
+1	418	1775539657842993904	CMakeFiles/native-lib.dir/native-lib.cpp.o	131104aa85bb821
+2	549	1775539657972995389	CMakeFiles/native-lib.dir/oboe_audio_engine.cpp.o	d2ee34184e6d0168
+549	579	1775539658007995788	/home/onyx/Documents/SoundAmplifier/app/build/intermediates/cxx/RelWithDebInfo/6y4ll5o1/obj/x86/libnative-lib.so	727d259a55b0a099

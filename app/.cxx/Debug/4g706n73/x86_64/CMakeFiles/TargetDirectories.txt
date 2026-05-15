@@ -1,0 +1,3 @@
+/home/onyx/Documents/SoundAmplifier/app/.cxx/Debug/4g706n73/x86_64/CMakeFiles/native-lib.dir
+/home/onyx/Documents/SoundAmplifier/app/.cxx/Debug/4g706n73/x86_64/CMakeFiles/edit_cache.dir
+/home/onyx/Documents/SoundAmplifier/app/.cxx/Debug/4g706n73/x86_64/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">727248057278-8i09u4udmghevo6f8eht1nhsgs6cbqtp.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">727248057278</string>
+    <string name="google_api_key" translatable="false">AIzaSyCkM2K-YPEmgwJIAhmiPmIvwrLv2n075bw</string>
+    <string name="google_app_id" translatable="false">1:727248057278:android:ee27e2cd75c27bf0f33fef</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCkM2K-YPEmgwJIAhmiPmIvwrLv2n075bw</string>
+    <string name="google_storage_bucket" translatable="false">purvesh-soundamplifier.firebasestorage.app</string>
+    <string name="project_id" translatable="false">purvesh-soundamplifier</string>
+</resources>

@@ -43,20 +43,21 @@ public final class AudiogramDao_Impl implements AudiogramDao {
       @Override
       @NonNull
       protected String createQuery() {
-        return "INSERT OR REPLACE INTO `audiogram_profiles` (`id`,`label`,`createdAt`,`leftEarThresholds`,`rightEarThresholds`,`leftEarGains`,`rightEarGains`,`noiseReductionLevel`) VALUES (nullif(?, 0),?,?,?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `audiogram_profiles` (`id`,`accountId`,`label`,`createdAt`,`leftEarThresholds`,`rightEarThresholds`,`leftEarGains`,`rightEarGains`,`noiseReductionLevel`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?)";
       }
 
       @Override
       protected void bind(@NonNull final SupportSQLiteStatement statement,
           @NonNull final AudiogramProfile entity) {
         statement.bindLong(1, entity.getId());
-        statement.bindString(2, entity.getLabel());
-        statement.bindLong(3, entity.getCreatedAt());
-        statement.bindString(4, entity.getLeftEarThresholds());
-        statement.bindString(5, entity.getRightEarThresholds());
-        statement.bindString(6, entity.getLeftEarGains());
-        statement.bindString(7, entity.getRightEarGains());
-        statement.bindLong(8, entity.getNoiseReductionLevel());
+        statement.bindString(2, entity.getAccountId());
+        statement.bindString(3, entity.getLabel());
+        statement.bindLong(4, entity.getCreatedAt());
+        statement.bindString(5, entity.getLeftEarThresholds());
+        statement.bindString(6, entity.getRightEarThresholds());
+        statement.bindString(7, entity.getLeftEarGains());
+        statement.bindString(8, entity.getRightEarGains());
+        statement.bindLong(9, entity.getNoiseReductionLevel());
       }
     };
     this.__deletionAdapterOfAudiogramProfile = new EntityDeletionOrUpdateAdapter<AudiogramProfile>(__db) {
@@ -113,9 +114,11 @@ public final class AudiogramDao_Impl implements AudiogramDao {
   }
 
   @Override
-  public Flow<List<AudiogramProfile>> getAllProfiles() {
-    final String _sql = "SELECT * FROM audiogram_profiles ORDER BY createdAt DESC";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+  public Flow<List<AudiogramProfile>> getAllProfilesForAccount(final String accountId) {
+    final String _sql = "SELECT * FROM audiogram_profiles WHERE accountId = ? ORDER BY createdAt DESC";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindString(_argIndex, accountId);
     return CoroutinesRoom.createFlow(__db, false, new String[] {"audiogram_profiles"}, new Callable<List<AudiogramProfile>>() {
       @Override
       @NonNull
@@ -123,6 +126,7 @@ public final class AudiogramDao_Impl implements AudiogramDao {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
           final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+          final int _cursorIndexOfAccountId = CursorUtil.getColumnIndexOrThrow(_cursor, "accountId");
           final int _cursorIndexOfLabel = CursorUtil.getColumnIndexOrThrow(_cursor, "label");
           final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "createdAt");
           final int _cursorIndexOfLeftEarThresholds = CursorUtil.getColumnIndexOrThrow(_cursor, "leftEarThresholds");
@@ -135,6 +139,8 @@ public final class AudiogramDao_Impl implements AudiogramDao {
             final AudiogramProfile _item;
             final int _tmpId;
             _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final String _tmpAccountId;
+            _tmpAccountId = _cursor.getString(_cursorIndexOfAccountId);
             final String _tmpLabel;
             _tmpLabel = _cursor.getString(_cursorIndexOfLabel);
             final long _tmpCreatedAt;
@@ -149,7 +155,7 @@ public final class AudiogramDao_Impl implements AudiogramDao {
             _tmpRightEarGains = _cursor.getString(_cursorIndexOfRightEarGains);
             final int _tmpNoiseReductionLevel;
             _tmpNoiseReductionLevel = _cursor.getInt(_cursorIndexOfNoiseReductionLevel);
-            _item = new AudiogramProfile(_tmpId,_tmpLabel,_tmpCreatedAt,_tmpLeftEarThresholds,_tmpRightEarThresholds,_tmpLeftEarGains,_tmpRightEarGains,_tmpNoiseReductionLevel);
+            _item = new AudiogramProfile(_tmpId,_tmpAccountId,_tmpLabel,_tmpCreatedAt,_tmpLeftEarThresholds,_tmpRightEarThresholds,_tmpLeftEarGains,_tmpRightEarGains,_tmpNoiseReductionLevel);
             _result.add(_item);
           }
           return _result;
@@ -166,9 +172,12 @@ public final class AudiogramDao_Impl implements AudiogramDao {
   }
 
   @Override
-  public Object getLatestProfile(final Continuation<? super AudiogramProfile> $completion) {
-    final String _sql = "SELECT * FROM audiogram_profiles ORDER BY createdAt DESC LIMIT 1";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+  public Object getLatestProfileForAccount(final String accountId,
+      final Continuation<? super AudiogramProfile> $completion) {
+    final String _sql = "SELECT * FROM audiogram_profiles WHERE accountId = ? ORDER BY createdAt DESC LIMIT 1";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindString(_argIndex, accountId);
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
     return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<AudiogramProfile>() {
       @Override
@@ -177,6 +186,7 @@ public final class AudiogramDao_Impl implements AudiogramDao {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
           final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+          final int _cursorIndexOfAccountId = CursorUtil.getColumnIndexOrThrow(_cursor, "accountId");
           final int _cursorIndexOfLabel = CursorUtil.getColumnIndexOrThrow(_cursor, "label");
           final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "createdAt");
           final int _cursorIndexOfLeftEarThresholds = CursorUtil.getColumnIndexOrThrow(_cursor, "leftEarThresholds");
@@ -188,6 +198,8 @@ public final class AudiogramDao_Impl implements AudiogramDao {
           if (_cursor.moveToFirst()) {
             final int _tmpId;
             _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final String _tmpAccountId;
+            _tmpAccountId = _cursor.getString(_cursorIndexOfAccountId);
             final String _tmpLabel;
             _tmpLabel = _cursor.getString(_cursorIndexOfLabel);
             final long _tmpCreatedAt;
@@ -202,7 +214,7 @@ public final class AudiogramDao_Impl implements AudiogramDao {
             _tmpRightEarGains = _cursor.getString(_cursorIndexOfRightEarGains);
             final int _tmpNoiseReductionLevel;
             _tmpNoiseReductionLevel = _cursor.getInt(_cursorIndexOfNoiseReductionLevel);
-            _result = new AudiogramProfile(_tmpId,_tmpLabel,_tmpCreatedAt,_tmpLeftEarThresholds,_tmpRightEarThresholds,_tmpLeftEarGains,_tmpRightEarGains,_tmpNoiseReductionLevel);
+            _result = new AudiogramProfile(_tmpId,_tmpAccountId,_tmpLabel,_tmpCreatedAt,_tmpLeftEarThresholds,_tmpRightEarThresholds,_tmpLeftEarGains,_tmpRightEarGains,_tmpNoiseReductionLevel);
           } else {
             _result = null;
           }

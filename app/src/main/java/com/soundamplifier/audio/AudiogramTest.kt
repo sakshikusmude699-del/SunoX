@@ -7,30 +7,47 @@ import com.soundamplifier.data.AUDIOGRAM_FREQUENCIES
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlin.math.PI
+import kotlin.math.pow
 import kotlin.math.sin
 
+enum class AudiogramEar {
+    LEFT,
+    RIGHT,
+}
+
 /**
- * Plays pure sine tones for audiogram threshold testing.
- * Frequencies follow standard audiometric test sequence.
+ * Plays pure sine tone bursts for audiogram threshold testing.
+ * One channel active (left or right); the other is silent for headphone routing.
  */
 class AudiogramTest {
 
     private val sampleRate = 44100
     private var audioTrack: AudioTrack? = null
 
+    /** Standard test frequencies (Hz). */
+    val frequencies: IntArray = AUDIOGRAM_FREQUENCIES
+
     /**
-     * Play a pure tone at [frequency] Hz at [volumeDb] dBFS (-60 to 0).
-     * Call stop() to end playback.
+     * Play one burst: [toneSeconds] tone, then [silenceSeconds] silence. Blocking on IO dispatcher.
+     * [dbHl] Hearing level 0 (sensitive) .. 80 (loud); mapped to safe playback level.
      */
-    suspend fun playTone(frequency: Int, volumeDb: Float = -20f) = withContext(Dispatchers.IO) {
+    suspend fun playToneBurst(
+        frequencyHz: Int,
+        dbHl: Int,
+        ear: AudiogramEar,
+        toneSeconds: Float = 1f,
+        silenceSeconds: Float = 0.5f,
+    ) = withContext(Dispatchers.IO) {
         stopTone()
 
-        val amplitude = dbToLinear(volumeDb)
-        val bufferSize = AudioTrack.getMinBufferSize(
+        val dbfs = dbHlToDbfs(dbHl.coerceIn(0, 100))
+        val amplitude = dbToLinear(dbfs)
+
+        val minBuf = AudioTrack.getMinBufferSize(
             sampleRate,
             AudioFormat.CHANNEL_OUT_STEREO,
             AudioFormat.ENCODING_PCM_FLOAT
-        )
+        ).coerceAtLeast(1024)
 
         audioTrack = AudioTrack.Builder()
             .setAudioAttributes(
@@ -46,26 +63,49 @@ class AudiogramTest {
                     .setChannelMask(AudioFormat.CHANNEL_OUT_STEREO)
                     .build()
             )
-            .setBufferSizeInBytes(bufferSize * 4)
+            .setBufferSizeInBytes(minBuf * 4)
             .setTransferMode(AudioTrack.MODE_STREAM)
             .build()
 
-        audioTrack?.play()
+        val track = audioTrack ?: return@withContext
+        track.play()
 
-        // Stream sine wave in chunks
-        val chunkSamples = sampleRate / 10 // 100ms chunks
-        val buffer = FloatArray(chunkSamples * 2) // stereo
+        val onSamples = (sampleRate * toneSeconds).toInt()
+        val offSamples = (sampleRate * silenceSeconds).toInt()
+        val totalFrames = onSamples + offSamples
+        var t = 0
         var phase = 0.0
-
-        while (audioTrack?.playState == AudioTrack.PLAYSTATE_PLAYING) {
-            for (i in 0 until chunkSamples) {
-                val sample = (amplitude * sin(2.0 * PI * frequency * phase / sampleRate)).toFloat()
-                buffer[i * 2] = sample     // left
-                buffer[i * 2 + 1] = sample // right
-                phase = (phase + 1) % sampleRate
+        while (t < totalFrames) {
+            val nFrames = minOf(512, totalFrames - t)
+            val buf = FloatArray(nFrames * 2)
+            for (i in 0 until nFrames) {
+                val frameIdx = t + i
+                val s = if (frameIdx < onSamples) {
+                    (amplitude * sin(2.0 * PI * frequencyHz * phase / sampleRate)).toFloat()
+                } else {
+                    0f
+                }
+                phase += 1.0
+                if (ear == AudiogramEar.LEFT) {
+                    buf[i * 2] = s
+                    buf[i * 2 + 1] = 0f
+                } else {
+                    buf[i * 2] = 0f
+                    buf[i * 2 + 1] = s
+                }
             }
-            audioTrack?.write(buffer, 0, buffer.size, AudioTrack.WRITE_BLOCKING)
+            var written = 0
+            while (written < buf.size) {
+                val r = track.write(buf, written, buf.size - written, AudioTrack.WRITE_BLOCKING)
+                if (r < 0) break
+                written += r
+            }
+            t += nFrames
         }
+
+        track.stop()
+        track.release()
+        audioTrack = null
     }
 
     fun stopTone() {
@@ -74,14 +114,18 @@ class AudiogramTest {
         audioTrack = null
     }
 
-    /** dBFS to linear amplitude (0.0 - 1.0) */
-    private fun dbToLinear(db: Float): Float {
-        return Math.pow(10.0, db / 20.0).toFloat().coerceIn(0f, 1f)
+    /** 0 dB HL ≈ very quiet; 80 dB HL ≈ loud but safe on phones with headphones. */
+    private fun dbHlToDbfs(dbHl: Int): Float {
+        val x = dbHl.coerceIn(0, 80) / 80f
+        return -52f + x * 32f
     }
 
+    private fun dbToLinear(db: Float): Float =
+        10.0.pow((db / 20.0)).toFloat().coerceIn(1e-5f, 1f)
+
     companion object {
-        // Test levels in dBFS from quiet to loud for threshold finding
+        val FREQUENCIES: IntArray = AUDIOGRAM_FREQUENCIES
+        @Deprecated("Use instance frequencies or AUDIOGRAM_FREQUENCIES")
         val TEST_LEVELS_DB = floatArrayOf(-60f, -50f, -40f, -30f, -20f, -10f, -5f)
-        val FREQUENCIES = AUDIOGRAM_FREQUENCIES
     }
 }

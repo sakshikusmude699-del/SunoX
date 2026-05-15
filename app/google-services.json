@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "727248057278",
+    "project_id": "purvesh-soundamplifier",
+    "storage_bucket": "purvesh-soundamplifier.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727248057278:android:ee27e2cd75c27bf0f33fef",
+        "android_client_info": {
+          "package_name": "com.soundamplifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727248057278-0s4fqn2vvu4ddg312218avp7ckhpt6b9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.soundamplifier",
+            "certificate_hash": "8a433ef1be513ea3bcc9a230066639a135568ad2"
+          }
+        },
+        {
+          "client_id": "727248057278-8i09u4udmghevo6f8eht1nhsgs6cbqtp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkM2K-YPEmgwJIAhmiPmIvwrLv2n075bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727248057278-8i09u4udmghevo6f8eht1nhsgs6cbqtp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
