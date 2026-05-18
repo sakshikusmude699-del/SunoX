@@ -2,7 +2,7 @@
 ### Real-Time Sound Amplifier for Android
 
 <p align="center">
-  <img src="screenshots/logo.png" width="140" alt="SunoX Logo"/>
+  <img src="screenshots/logo.jpeg" width="140" alt="SunoX Logo"/>
 </p>
 
 <p align="center">
